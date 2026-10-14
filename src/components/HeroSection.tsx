@@ -27,11 +27,16 @@ export default function HeroSection() {
         </nav>
       </FadeIn>
 
-      <div className="overflow-hidden">
+      <div className="overflow-hidden px-6 md:px-12 lg:px-16 mt-4 sm:mt-6 md:mt-8">
         <FadeIn delay={0.15} y={40}>
-          <h1 className="hero-heading mt-6 sm:mt-8 md:mt-10 lg:mt-12 w-full whitespace-nowrap text-center text-[13vw] sm:text-[14vw] md:text-[15vw] lg:text-[16.5vw] font-black uppercase leading-none tracking-tight select-none">
-            Hi, i&apos;m pavan
-          </h1>
+          <div className="flex items-center justify-between w-full">
+            <h1 className="hero-heading whitespace-nowrap text-[10.5vw] sm:text-[11.5vw] md:text-[12vw] lg:text-[12.8vw] font-black uppercase leading-none tracking-tight select-none">
+              Hi, i&apos;m
+            </h1>
+            <h1 className="hero-heading whitespace-nowrap text-[10.5vw] sm:text-[11.5vw] md:text-[12vw] lg:text-[12.8vw] font-black uppercase leading-none tracking-tight select-none">
+              Pavan
+            </h1>
+          </div>
         </FadeIn>
       </div>
 
