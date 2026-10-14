@@ -27,16 +27,11 @@ export default function HeroSection() {
         </nav>
       </FadeIn>
 
-      <div className="overflow-hidden px-6 md:px-12 lg:px-16 mt-4 sm:mt-6 md:mt-8">
+      <div className="overflow-hidden mt-4 sm:mt-6 md:mt-8 px-4 text-center">
         <FadeIn delay={0.15} y={40}>
-          <div className="flex items-center justify-between w-full">
-            <h1 className="hero-heading whitespace-nowrap text-[10.5vw] sm:text-[11.5vw] md:text-[12vw] lg:text-[12.8vw] font-black uppercase leading-none tracking-tight select-none">
-              Hi, i&apos;m
-            </h1>
-            <h1 className="hero-heading whitespace-nowrap text-[10.5vw] sm:text-[11.5vw] md:text-[12vw] lg:text-[12.8vw] font-black uppercase leading-none tracking-tight select-none">
-              Pavan
-            </h1>
-          </div>
+          <h1 className="hero-heading inline-block whitespace-nowrap text-center text-[10vw] sm:text-[11vw] md:text-[11.8vw] lg:text-[12.2vw] font-black uppercase leading-none tracking-tight select-none">
+            Hi, i&apos;m pavan
+          </h1>
         </FadeIn>
       </div>
 
@@ -55,14 +50,20 @@ export default function HeroSection() {
         </FadeIn>
       </div>
 
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0 w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px]">
+      <div
+        className="absolute left-1/2 -translate-x-1/2 z-10 pointer-events-none"
+        style={{
+          bottom: 0,
+          width: 'clamp(280px, 32vw, 440px)',
+        }}
+      >
         <FadeIn delay={0.6} y={30}>
           <Magnet
             padding={150}
             strength={3}
             activeTransition="transform 0.3s ease-out"
             inactiveTransition="transform 0.6s ease-in-out"
-            className="w-full"
+            className="w-full pointer-events-auto"
           >
             <img src={PORTRAIT} alt="Pavan Kumar Dasari" className="w-full h-auto block" />
           </Magnet>
