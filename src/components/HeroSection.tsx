@@ -29,8 +29,8 @@ export default function HeroSection() {
 
       <div className="overflow-hidden">
         <FadeIn delay={0.15} y={40}>
-          <h1 className="hero-heading mt-6 sm:mt-4 md:-mt-5 w-full whitespace-nowrap text-center text-[6.8vw] sm:text-[7.4vw] md:text-[7.8vw] lg:text-[8.2vw] xl:text-[8.5vw] font-black uppercase leading-none tracking-tight">
-            Hi, i&apos;m pavan kumar dasari
+          <h1 className="hero-heading mt-6 sm:mt-8 md:mt-10 lg:mt-12 w-full whitespace-nowrap text-center text-[13vw] sm:text-[14vw] md:text-[15vw] lg:text-[16.5vw] font-black uppercase leading-none tracking-tight select-none">
+            Hi, i&apos;m pavan
           </h1>
         </FadeIn>
       </div>
@@ -38,9 +38,10 @@ export default function HeroSection() {
       <div className="relative z-20 mt-auto flex items-end justify-between px-6 md:px-10 pb-7 sm:pb-8 md:pb-10">
         <FadeIn delay={0.35} y={20}>
           <p
-            className="max-w-[160px] sm:max-w-[220px] md:max-w-[260px] font-light uppercase tracking-wide leading-snug text-[#D7E2EA]"
-            style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
+            className="max-w-[180px] sm:max-w-[240px] md:max-w-[280px] font-light uppercase tracking-wide leading-snug text-[#D7E2EA]"
+            style={{ fontSize: 'clamp(0.75rem, 1.3vw, 1.4rem)' }}
           >
+            <span className="font-semibold text-white block mb-1">Pavan Kumar Dasari</span>
             a 3d creator driven by crafting striking and unforgettable projects
           </p>
         </FadeIn>
